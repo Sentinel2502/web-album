@@ -40,3 +40,10 @@ input[type="text"],
 textarea {
   background-color: #1c2336;
 }
+
+/* ensures that footage plays on enture screen. id refers to canvas tag */
+#test {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}

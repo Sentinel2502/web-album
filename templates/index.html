@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 
+<!-- importing google plex font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
@@ -9,9 +10,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet"  href="{%  static  'css/theme.css'  %}">
-    <script src="{% static 'js/background.js' %}"></script> 
+    <!-- importing packages for background footage -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/transducers.js/0.3.2/transducers.min.js"></script>
+    <!-- importing script that manages background footage -->
+    <script type="text/babel" src="{% static 'js/background.js' %}"></script>
 </head>
 <body>
+  <canvas id='test'></canvas>
   <div class="terminal-body"> <!-- container for main terminal -->
     <div class = "inner-terminal"> <!-- container for terminal  -->
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis quis purus sed varius. Nam vulputate diam non mauris lacinia ultrices ac ut lorem. Proin in nunc sed nisi lacinia aliquet nec porta quam. Sed ac placerat justo, non accumsan augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> <!-- container for greeting text -->
