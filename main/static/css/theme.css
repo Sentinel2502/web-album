@@ -1,0 +1,42 @@
+* {
+  font-family: "IBM Plex Sans";
+}
+
+body {
+  background-color: #060d20;
+}
+
+div {
+  background-color: #0f1629;
+}
+
+.inner-terminal {
+  background-color: #0f1629;
+}
+
+.terminal-body {
+  margin: 1%;
+  margin-top: 5%;
+}
+
+p {
+  color: #f9f9f9;
+  margin: 1%;
+  padding-top: 1%;
+}
+
+li {
+  color: #697083;
+  list-style: none;
+}
+
+input {
+  width: 100%;
+  border: 0px;
+  color: #f9f9f9;
+}
+
+input[type="text"],
+textarea {
+  background-color: #1c2336;
+}
