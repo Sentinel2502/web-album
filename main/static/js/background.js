@@ -76,7 +76,7 @@ root.setAttribute('width', width);//84
 root.setAttribute('height', height);//69
 const randomPoint = randomPointBySize(width, height, maxR);//81
 const ctx = root.getContext('2d');//75
-let points = new Array(150).fill(0).map(randomPoint);
+let points = new Array(250).fill(0).map(randomPoint);//amout of point
 let links = combine(points.map((_, i) => i));
 
 window.onresize = () => {
