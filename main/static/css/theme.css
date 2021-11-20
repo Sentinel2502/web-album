@@ -40,7 +40,7 @@ textarea {
   background-color: #1c2336;
 }
 
-/* ensures that footage plays on enture screen. id refers to canvas tag */
+/* ensures that footage plays on enture screen and doesn't interfere with form input. id refers to canvas tag */
 #test {
 	width: 100%;
 	height: 100%;

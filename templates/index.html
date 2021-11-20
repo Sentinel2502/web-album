@@ -9,12 +9,14 @@
 
 <html lang="en">
 <head>
-    <link rel="stylesheet"  href="{%  static  'css/theme.css'  %}">
+    <link rel="stylesheet" href="{% static 'css/theme.css' %}">
     <!-- importing packages for background footage -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/transducers.js/0.3.2/transducers.min.js"></script>
     <!-- importing script that manages background footage -->
+    <!-- disabling footage cause it is melting my pc
     <script type="text/babel" src="{% static 'js/background.js' %}"></script>
+    -->
 </head>
 <body>
   <canvas id='test'></canvas>
@@ -29,5 +31,15 @@
     </div>
     <form><input type="text" name="" value=""></form>
   </div>
+  <button onclick=
+    "show_image('{% static 'students/GOD.png' %}',
+                 300,
+                 200,
+                 'Painting');">Wanna see something?</button>
+  <button onclick=
+    "show_image('http://google.com/images/logo.gif',
+                  276,
+                  110,
+                  'Google Logo');">Add Google Logo</button>
 </body>
 </html>

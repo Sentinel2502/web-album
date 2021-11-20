@@ -100,8 +100,8 @@ const draw = (points, lines) => {
     //var gradient = ctx.createLinearGradient(line.x1, line.y1, line.x2, line.y2);
     var gradient = ctx.createLinearGradient(0, 0, width, height);
     //gradient.addColorStop(0.5, `rgba(0, 255, 255, ${line.opacity})`);
-    gradient.addColorStop(0, `rgba(0, 255, 0, ${line.opacity})`);
-    gradient.addColorStop(1, `rgba(100, 100, 255, ${line.opacity})`);
+    gradient.addColorStop(0, `rgba(249, 249, 249, ${line.opacity})`);
+    gradient.addColorStop(1, `rgba(85, 134, 193, ${line.opacity})`);
     ctx.strokeStyle = gradient;
     ctx.moveTo(line.x1, line.y1);
     ctx.lineTo(line.x2, line.y2);
